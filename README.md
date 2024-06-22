@@ -2,88 +2,35 @@
 photo-sharing app that uses AI-powered facial recognition to help users organize and share photos​
 
 
-Model Workflow 
+Model Workflow:
 
 1. Labeled data for Face Detection: 
+We used a freely available dataset from Kaggle, containing a large collection of approximately 32,000 images (26,000 for training and 6,000 for validation). This dataset included clean labels in the xywh format (top-left x-coordinate, top-left y-coordinate, face-width, face-height) for human face detection tasks.
 
-We used a freely available dataset from Kaggle, containing a large collection of approximately 32,000 images (26,000 for training and 6,000 for validation). This dataset included clean labels in the xywh format (top-left x-coordinate, top-left y-coordinate, face-width, face-height) for human face detection tasks. 
- 
 2. Face Detection using YOLOv8: 
+Face Detection Dataset is used to train a YOLOv8m model. This model locates the face in an image and extracts the faces from the image for further processing.
 
-Face Detection Dataset is used to train a YOLOv8m model. This model locates the face in an image and extracts the faces from the image for further processing. 
-
- 
-
-Figure: Performance Metrics of Yolov8 
-
- 
-
-Figure: Face Detection by Yolov8 
-
- 
-
- 
 3. Face alignment using Dlib: 
-
 Dlib’s pre-trained shape predictor can locate 68 key points (landmarks) on the face. 
-Based on these landmarks, a few key points on the face were located to align the face using some math. 
- 
- 
+Based on these landmarks, a few key points on the face were located to align the face using some math.
 
-Figure: Face Alignment Using Dlib 
+Face alignment is a crucial preprocessing step in face recognition systems. It ensures that faces in different images are consistently oriented, which has several significant benefits for the accuracy and robustness of face recognition models.
 
-Face alignment is a crucial preprocessing step in face recognition systems. It ensures that faces in different images are consistently oriented, which has several significant benefits for the accuracy and robustness of face recognition models. 
-
- 
-
- 
-
- 
- 
 4. Data collection to train Embedding model 
-
-To train a reliable embedding model sufficient data is required. Till now we collected images of 11,197 individuals which contain on average ~20 photos per person. That is 220470 photos. 
-
+To train a reliable embedding model sufficient data is required. Till now we have collected images of 11,197 individuals which contain on average ~20 photos per person. That is 220470 photos. 
 Most of this data was collected from Kaggle, and a few were scraped. 
 
- 
-5. Train embedding model with the implementation of Siamese network: 
-
-a. Image preprocessing: 
-
-The images were resized to a fixed input size of 128x128 pixels with 3 color channels (RGB). This uniform size ensures that the model receives consistent input dimensions.  
-
-b. Data Preparation:  
-
-Triplets were created from the dataset. Care was taken to ensure that each triplet contained one anchor image, one positive image, and one negative image. 
-
+5. Train the embedding model with the implementation of the Siamese network:
+a. Image preprocessing:
+The images were resized to a fixed input size of 128x128 pixels with 3 color channels (RGB). This uniform size ensures that the model receives consistent input dimensions.
+b. Data Preparation:
+Triplets were created from the dataset. Care was taken to ensure that each triplet contained one anchor image, one positive image, and one negative image.
 c. Inception Network: 
-A pre-trained InceptionV3 model was used, with modifications to adapt it for the Siamese network. Specifically, the top layers (fully connected layers) were removed, and the remaining network was used to extract features from input images. 
-
- 
-
-Figure: Inception Network 
-
+A pre-trained InceptionV3 model was used, with modifications to adapt it for the Siamese network. Specifically, the top layers (fully connected layers) were removed, and the remaining network was used to extract features from input images.
 b. Siamese Network: 
-The triplet loss function was used to train the Siamese network. This loss function ensures that an anchor image (A) is closer to a positive image (P) (another image of the same person) than to a negative image (N) (an image of a different person) by a margin. 
+The triplet loss function was used to train the Siamese network. This loss function ensures that an anchor image (A) is closer to a positive image (P) (another image of the same person) than to a negative image (N) (an image of a different person) by a margin.
+The model was trained with triplet data. The optimizer used was Adam, known for its efficiency in handling large datasets and complex models.
 
-Figure: Triplet Loss 
-
-The model was trained with triplet data. The optimizer used was Adam, known for it’s efficiency in handling large datasets and complex models. 
-
- 
-
-Figure: Siamese Network 
-
- 
-
- 
-
- 
-6. Face Recognition: 
-
-For the task of Face Recognition, we took a short video from the users and extracted 3 frames from it. These frames correspond to the frontal face, the face turned to the left, and the face turned to the right. 
-
-           
-
+6. Face Recognition:
+For Face Recognition, we took a short video from the users and extracted 3 frames. These frames correspond to the frontal face, the face turned to the left, and the face turned to the right.
 Embeddings generated by the trained Siamese network were used to train machine learning models such as K-Nearest Neighbors (KNN) and Support Vector Machine (SVM). The process involved extracting embeddings for each face image and then using these embeddings as features to train the KNN and SVM classifiers for face classification tasks. 
