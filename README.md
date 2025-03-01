@@ -42,36 +42,19 @@ The methodology involves several key steps:
 
 ## Results:
 The project achieved several significant outcomes:
-• User-Friendly Interface: An intuitive and easy-to-navigate user interface.
-• Smooth Backend Pipeline: Efficiently handles face verification and recognition tasks.
-• Effective Face Detection Model: Demonstrates high accuracy and real-time processing.
-• Reliable Embedding Model: Generates embeddings that effectively capture the unique features of each face.
-• Robust Dataset Collection: A diverse dataset that enhances the model's generalization capability.
-• Model Performance: Achieved effective results in training and validation, with a nearly balanced performance between correct and incorrect predictions.="https://github.com/C-s-on/parikar/blob/main/gfx/vgg_confusion_matrix.png"
-
-## Visualization:
-• CNN Architecture: Illustrates the architecture of a convolutional neural network (CNN), which is a type of deep learning model widely used for image analysis tasks.
-• Complete Model Workflow: Demonstrates the encodings of facial image when passed in the CNN architecture.
-• Flowchart of App: Provides a visual representation of the app's workflow, including account registration, user functionality, image storage and processing, and face detection results.
-• Project Workflow: Illustrates the project workflow.
-• Performance Metrics of Yolov8: Shows the performance metrics of the Yolov8 model.
-• Face Detection by Yolov8: Demonstrates face detection using Yolov8.
-• Face Alignment Using Dlib: Shows face alignment using Dlib.
-• Inception Network: Illustrates the Inception Network.
-• Triplet Loss: Demonstrates Triplet Loss.
-• Siamese Network: Illustrates the Siamese Network.
-• Project Pipeline Flowchart: Shows the project pipeline flowchart.
-• UI of App: Shows the User Interface of the Reaco App.
+User-Friendly Interface: An intuitive and easy-to-navigate user interface.
+Smooth Backend Pipeline: Efficiently handles face verification and recognition tasks.
+Effective Face Detection Model: Demonstrates high accuracy and real-time processing.
+Reliable Embedding Model: Generates embeddings that effectively capture the unique features of each face.
+Robust Dataset Collection: A diverse dataset that enhances the model's generalization capability.
+Model Performance: Achieved effective results in training and validation, with a nearly balanced performance between correct and incorrect predictions.
 
 ## Discussion:
 The Reaco project addresses the problem of manually sorting and categorizing large image collections, which is a time-consuming challenge for photographers and event organizers. By utilizing advanced machine learning techniques such as CNNs, N-Short learning, and KNN, the project aims to automate this process, making it more efficient and less tedious. The development of a user-friendly mobile app with an intuitive interface further enhances the accessibility and usability of the system.
 
-## Conclusion:
-Parika serves as a technological bridge, promoting Nepali culinary heritage through efficient food recognition. The project intends continuous database enrichment for expanded coverage and improved accuracy in identifying Nepali dishes.
-
 ## Outcome:
 The Reaco project successfully developed a face detection and sorting app that provides a valuable solution for users and photographers to efficiently manage and organize their image collections based on face detection results. The project leverages cutting-edge technologies and machine learning techniques to automate the process of face detection, clustering, and image categorization.
-Outcomes
+
 Key outcomes of the Reaco project include:
 • A robust face detection model capable of accurately identifying and locating faces in images.
 • A user-friendly mobile app with an intuitive user interface.
@@ -82,9 +65,8 @@ Key outcomes of the Reaco project include:
 
 ## Resources
 1. Python Documentation - https://docs.python.org/3/tutorial/index.html
-2. Seaborn Documentation - https://seaborn.pydata.org/tutorial.html
-3. Pandas Documentation - https://pandas.pydata.org/docs
-4. Numpy Documentation - https://numpy.org/doc/stable
-5. Matplotlib Documentation - https://matplotlib.org/stable/tutorials/index
-6. Ipython Documentation - https://ipython.org/documentation.html
-7. Plotly Documentation - https://plotly.com/python/
+2. Ipython Documentation - https://ipython.org/documentation.html
+3. TensorFlow - https://www.tensorflow.org/guide
+4. InseptionV3 - https://keras.io/api/applications/inceptionv3/
+5. Face Alignment - https://medium.com/@dsfellow/precise-face-alignment-with-opencv-dlib-e6c8acead262
+6. yoloV8 - https://github.com/autogyro/yolo-V8
