@@ -17,13 +17,9 @@ Reaco is an intelligent face detection and classification app designed to automa
 - [Resources](#resources)
 
 ## Objectives:
-The primary objectives of the Reaco project are:
-• Develop an automated system for accurate face detection, recognition, and clustering in image collections.
-• Utilize CNNs, N-Short learning, and KNN for robust facial recognition and categorization, paired with a user-friendly Flutter/Dart interface for easy image uploads and organized result retrieval.
-• Enable efficient distribution of requested photos based on facial recognition.
+Develop an automated system for accurate face detection, recognition, and clustering in image collections. Utilizing CNNs, N-Short learning, and KNN for robust facial recognition and categorization, paired with a user-friendly Flutter/Dart interface for easy image uploads and organized result retrieval which Enable efficient distribution of requested photos based on facial recognition.
 
 ## Features:
-Key features of the Reaco application:
 • Automated Face Detection and Categorization: Uses CNNs and other machine learning algorithms to automatically detect and categorize faces in images.
 • User-Friendly Interface: Built with Flutter and Dart to provide a responsive and intuitive user experience across multiple platforms.
 • Efficient Data Management: Utilizes Fast API and a MongoDB database for efficient and scalable data management.
