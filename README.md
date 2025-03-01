@@ -51,7 +51,7 @@ Model Performance: Achieved effective results in training and validation, with a
 ## Discussion:
 The Reaco project addresses the problem of manually sorting and categorizing large image collections, which is a time-consuming challenge for photographers and event organizers. By utilizing advanced machine learning techniques such as CNNs, N-Short learning, and KNN, the project aims to automate this process, making it more efficient and less tedious. The development of a user-friendly mobile app with an intuitive interface further enhances the accessibility and usability of the system.
 
-## Outcome:
+## Outcomes:
 The Reaco project successfully developed a face detection and sorting app that provides a valuable solution for users and photographers to efficiently manage and organize their image collections based on face detection results. The project leverages cutting-edge technologies and machine learning techniques to automate the process of face detection, clustering, and image categorization.
 
 Key outcomes of the Reaco project include:
