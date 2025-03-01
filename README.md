@@ -11,8 +11,7 @@ Reaco is an intelligent face detection and classification app designed to automa
 - [Background](#background)
 - [Methodology](#methodology)
 - [Results](#results)
-- [Appendix](#appendix)
-- [Conclusion](#conclusion)
+- [Discussion](#Discussion)
 - [Outcomes](#outcomes)
 - [Resources](#resources)
 
