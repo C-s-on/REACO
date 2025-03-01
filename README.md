@@ -19,13 +19,13 @@ Reaco is an intelligent face detection and classification app designed to automa
 Develop an automated system for accurate face detection, recognition, and clustering in image collections. Utilizing CNNs, N-Short learning, and KNN for robust facial recognition and categorization, paired with a user-friendly Flutter/Dart interface for easy image uploads and organized result retrieval which Enable efficient distribution of requested photos based on facial recognition.
 
 ## Features:
-• Automated Face Detection and Categorization: Uses CNNs and other machine learning algorithms to automatically detect and categorize faces in images.
-• User-Friendly Interface: Built with Flutter and Dart to provide a responsive and intuitive user experience across multiple platforms.
-• Efficient Data Management: Utilizes Fast API and a MongoDB database for efficient and scalable data management.
-• Cross-Platform Compatibility: Employs Docker for seamless deployment across different computing environments.
-• Account Registration: Users can register by uploading a video of their face, which is then processed to store three images for future comparison.
-• Image Upload and Processing: Users can upload images, which are then stored in MongoDB and processed using face detection algorithms.
-• Sorted Image Retrieval: Users can access a dashboard to receive sorted and filtered images based on face detection predictions.
+- Automated Face Detection and Categorization: Uses CNNs and other machine learning algorithms to automatically detect and categorize faces in images.
+- User-Friendly Interface: Built with Flutter and Dart to provide a responsive and intuitive user experience across multiple platforms.
+- Efficient Data Management: Utilizes Fast API and a MongoDB database for efficient and scalable data management.
+- Cross-Platform Compatibility: Employs Docker for seamless deployment across different computing environments.
+- Account Registration: Users can register by uploading a video of their face, which is then processed to store three images for future comparison.
+- Image Upload and Processing: Users can upload images, which are then stored in MongoDB and processed using face detection algorithms.
+- Sorted Image Retrieval: Users can access a dashboard to receive sorted and filtered images based on face detection predictions.
 
 ## Background:
 Manually organizing large collections of photographs based on individuals present is a cumbersome task. Existing solutions lack efficient facial recognition and image categorization capabilities specific to photography workflow needs. Reaco addresses this gap by developing an intelligent system that automates face detection, extraction, and clustering through cutting-edge technologies. The user-friendly solution aims to streamline image organization for photographers, enabling them to focus on their creative pursuits while revolutionizing automated image analysis.
