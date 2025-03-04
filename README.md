@@ -36,7 +36,7 @@ Labeled data for Face Detection: We used a freely available dataset from Kaggle,
 - Face Detection using YOLOv8: Face Detection Dataset is used to train a YOLOv8m model to locate the face in an image and extracts the faces from the image for further processing.
 <p align="center">
 <img src="https://github.com/C-s-on/REACO/blob/main/gfx/yolo_result.png" width="600"/>
-<img src="https://github.com/C-s-on/REACO/blob/main/gfx/yolo_prediction.png" width="600"/></p>
+<img src="https://github.com/C-s-on/REACO/blob/main/gfx/yolo_predict.png" width="600"/></p>
 - [Face alignment using Dlib](https://medium.com/@dsfellow/precise-face-alignment-with-opencv-dlib-e6c8acead262): Locating 68 key points (landmarks) on the face. Based on these landmarks, a few key points on the face were located to align the face.
 - Data collection to train the Embedding model: Images of 11,197 individuals, which contain an average of ~20 photos per person.
 - Train the embedding model with the implementation of the Siamese network: Preprocessing images to a fixed size, preparing triplets, and using a pre-trained InceptionV3 model. The model was trained with triplet data, using the Adam optimizer.
