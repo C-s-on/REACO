@@ -32,21 +32,18 @@ Manually organizing large collections of photographs based on individuals presen
 
 ## Methodology:
 The methodology involves several key steps:
+- Labeled data for Face Detection: Using a freely available dataset from Kaggle, containing approximately 32,000 images (26,000 for training and 6,000 for validation). This dataset included clean labels in the xywh format for human face detection tasks.
+- Face Detection using YOLOv8: Face Detection Dataset is used to train a YOLOv8m model to locate the face in an image and extracts the faces from the image for further processing.<p align='center'>  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/yolo_predict.png" width="400"/> </p>
+- sdf
+- sdf
+- sdf
+- sdf
+
+
+
+
 1. Labeled data for Face Detection: Using a freely available dataset from Kaggle, containing approximately 32,000 images (26,000 for training and 6,000 for validation). This dataset included clean labels in the xywh format for human face detection tasks.
-2. Face Detection using YOLOv8: Face Detection Dataset is used to train a YOLOv8m model to locate the face in an image and extracts the faces from the image for further processing.
-  <p align='center'>
-  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/yolo_predict.png" width="400"/>
-  </p>
-3. dsf
-4. fasdf
-
-
-
-1. Labeled data for Face Detection: Using a freely available dataset from Kaggle, containing approximately 32,000 images (26,000 for training and 6,000 for validation). This dataset included clean labels in the xywh format for human face detection tasks.
-2. Face Detection using YOLOv8: Face Detection Dataset is used to train a YOLOv8m model to locate the face in an image and extracts the faces from the image for further processing.
-  <p align='center'>
-  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/yolo_predict.png" width="400"/>
-  </p>
+2. Face Detection using YOLOv8: Face Detection Dataset is used to train a YOLOv8m model to locate the face in an image and extracts the faces from the image for further processing.<p align='center'>  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/yolo_predict.png" width="400"/> </p>
 3. Face alignment using Dlib: Locating 68 key points (landmarks) on the face. Based on these landmarks, a few key points on the face were located to align the face using some math.
 4. Data collection to train Embedding model: Images of 11,197 individuals which contain on average ~20 photos per person.
 5. Train the embedding model with the implementation of Siamese network: Preprocessing images to a fixed size, preparing triplets, and using a pre-trained InceptionV3 model. The model was trained with triplet data, using the Adam optimizer.
