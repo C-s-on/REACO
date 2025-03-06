@@ -82,9 +82,9 @@ indicating minimal overfitting well, with both losses converging and maintaining
 
 ## Appendix
 <p align="center">
-  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco.jpg" width="300"/>
-  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco_welcome.jpg" width="300"/>
-  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco_signup.jpg" width="300"/>
+  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco.jpg" width="250"/>
+  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco_welcome.jpg" width="250"/>
+  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco_signup.jpg" width="250"/>
 </p>
 
 ## Resources
