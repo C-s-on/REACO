@@ -81,7 +81,11 @@ key patterns. The validation loss is consistently slightly lower than the traini
 indicating minimal overfitting well, with both losses converging and maintaining stability. 
 
 ## Appendix
-
+<p align="center">
+  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco.jpg" width="300"/>
+  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco_welcome.jpg" width="300"/>
+  <img src="https://github.com/C-s-on/REACO/blob/main/gfx/reaco_signup.jpg" width="300"/>
+</p>
 
 ## Resources
 1. Python Documentation - https://docs.python.org/3/tutorial/index.html
